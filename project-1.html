@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title data-i18n="project1.meta.title">GameHub Case Study</title>
+    <meta
+      name="description"
+      content="Case study for GameHub, a real-time multi-channel chat application built with ASP.NET Core, Blazor WebAssembly, and SignalR."
+      data-i18n-content="project1.meta.description"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-page="project1">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/git-gud.png"
+              alt="Juan Canseco logo"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Juan Canseco</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link" data-i18n="nav.home">Home</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link" data-i18n="nav.about">About</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link" data-i18n="nav.projects">Projects</a>
+            </li>
+          </ul>
+          <div class="header__lang-toggle lang-toggle" aria-label="Language switcher">
+            <button
+              class="lang-toggle__btn lang-toggle__btn--active"
+              type="button"
+              data-lang-switch="en"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button
+              class="lang-toggle__btn"
+              type="button"
+              data-lang-switch="es"
+              aria-pressed="false"
+            >
+              ES
+            </button>
+          </div>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html" data-i18n="nav.home">Home</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about" data-i18n="nav.about">About</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects" data-i18n="nav.projects">Projects</a>
+            </li>
+          </ul>
+          <div class="header__sm-menu-lang lang-toggle" aria-label="Language switcher">
+            <button
+              class="lang-toggle__btn lang-toggle__btn--active"
+              type="button"
+              data-lang-switch="en"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button
+              class="lang-toggle__btn"
+              type="button"
+              data-lang-switch="es"
+              aria-pressed="false"
+            >
+              ES
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">GameHub</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary" data-i18n="project1.hero.description">
+            A real-time multi-channel chat application built to push my C# and
+            .NET skills further with Clean Architecture, SignalR, reliable
+            messaging patterns, and a modern Blazor front end.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <span class="project-cs-hero__status-pill" data-i18n="project1.hero.status">Live demo in progress</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/projects/gamehub/gamehub-10.png"
+              alt="GameHub application screenshot"
+              class="project-details__showcase-img"
+              data-i18n-attr="alt:project1.showcase.alt"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title" data-i18n="common.projectOverview">Project Overview</h3>
+              <p class="project-details__desc-para" data-i18n-html="project1.overview.paragraph1">
+                GameHub is the project where things started to click for me in
+                modern <strong>C#</strong> and <strong>.NET</strong>. I did not
+                want another simple CRUD app, so I picked a chat application
+                because it gave me room to work on real-time communication,
+                authentication, backend structure, and frontend experience all
+                at once.
+              </p>
+              <p class="project-details__desc-para" data-i18n-html="project1.overview.paragraph2">
+                What I like most about this project is that it let me practice
+                ideas I care about in a more realistic setting:
+                <strong>Clean Architecture</strong>, a
+                <strong>CQRS-style flow</strong>, <strong>SignalR</strong>,
+                <strong>Redis</strong>, <strong>RabbitMQ</strong>, and
+                <strong>MassTransit</strong>. I also added automated tests with
+                <strong>Testcontainers</strong> because I wanted the project to
+                feel closer to the kind of codebase I would be proud to build in
+                a team environment.
+              </p>
+              <p class="project-details__desc-para" data-i18n-html="project1.overview.paragraph3">
+                More than anything, GameHub represents confidence. It is the
+                project where I feel I finally implemented
+                <strong>clean architecture</strong> in a way that made sense to
+                me, and it gave me a lot of motivation to keep pushing deeper
+                into backend engineering.
+              </p>
+            </div>
+
+            <div class="project-details__video">
+              <h3 class="project-details__content-title" data-i18n="common.videoWalkthrough">Video Walkthrough</h3>
+              <div class="project-details__video-frame-cont">
+                <button
+                  class="project-video"
+                  type="button"
+                  data-youtube-id="d9ajv5hT4lU"
+                  data-youtube-src="https://www.youtube.com/embed/d9ajv5hT4lU?si=W1iqUpl3aoLXnOmY"
+                  data-youtube-watch-url="https://www.youtube.com/watch?v=d9ajv5hT4lU"
+                  data-video-title="GameHub walkthrough"
+                  data-i18n-attr="data-video-title:project1.video.iframeTitle"
+                >
+                  <img
+                    src="./assets/projects/gamehub-2.png"
+                    alt="GameHub walkthrough preview"
+                    class="project-video__image"
+                    data-i18n-attr="alt:project1.video.previewAlt"
+                  />
+                  <span class="project-video__overlay">
+                    <span class="project-video__badge" data-i18n="common.playWalkthrough">Play walkthrough</span>
+                    <span class="project-video__title" data-i18n="project1.video.title">
+                      Watch the GameHub demo directly from this case study.
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-details__screenshots">
+              <h3 class="project-details__content-title" data-i18n="common.screenshots">Screenshots</h3>
+              <div class="project-details__screenshots-grid">
+                <img
+                  src="./assets/projects/gamehub/gamehub-01.png"
+                  alt="GameHub screenshot 1"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image1"
+                />
+                <img
+                  src="./assets/projects/gamehub/gamehub-02.png"
+                  alt="GameHub screenshot 2"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image2"
+                />
+                <img
+                  src="./assets/projects/gamehub/gamehub-03.png"
+                  alt="GameHub screenshot 3"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image3"
+                />
+                <img
+                  src="./assets/projects/gamehub/gamehub-04.png"
+                  alt="GameHub screenshot 4"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image4"
+                />
+                <img
+                  src="./assets/projects/gamehub/gamehub-05.png"
+                  alt="GameHub screenshot 5"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image5"
+                />
+                <img
+                  src="./assets/projects/gamehub/gamehub-06.png"
+                  alt="GameHub screenshot 6"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image6"
+                />
+                <img
+                  src="./assets/projects/gamehub/gamehub-07.png"
+                  alt="GameHub screenshot 7"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image7"
+                />
+                <img
+                  src="./assets/projects/gamehub/gamehub-08.png"
+                  alt="GameHub screenshot 8"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image8"
+                />
+                <img
+                  src="./assets/projects/gamehub/gamehub-09.png"
+                  alt="GameHub screenshot 9"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image9"
+                />
+                <img
+                  src="./assets/projects/gamehub/gamehub-10.png"
+                  alt="GameHub screenshot 10"
+                  class="project-details__screenshot-img"
+                  data-i18n-attr="alt:project1.screenshots.image10"
+                />
+              </div>
+            </div>
+
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title" data-i18n="common.toolsUsed">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">C#</div>
+                <div class="skills__skill">.NET 9</div>
+                <div class="skills__skill">ASP.NET Core</div>
+                <div class="skills__skill">Blazor WebAssembly</div>
+                <div class="skills__skill">MudBlazor</div>
+                <div class="skills__skill">SignalR</div>
+                <div class="skills__skill">MediatR</div>
+                <div class="skills__skill">FluentValidation</div>
+                <div class="skills__skill">Entity Framework Core</div>
+                <div class="skills__skill">SQL Server</div>
+                <div class="skills__skill">Redis</div>
+                <div class="skills__skill">RabbitMQ</div>
+                <div class="skills__skill">MassTransit</div>
+                <div class="skills__skill">xUnit</div>
+                <div class="skills__skill">Testcontainers</div>
+                <div class="skills__skill">Docker</div>
+              </div>
+            </div>
+
+            <div class="project-details__links">
+              <h3 class="project-details__content-title" data-i18n="common.projectLinks">Project Links</h3>
+              <p class="project-details__status" data-i18n="project1.links.status">
+                Live demo is still a work in progress while I continue polishing
+                the application and deployment story.
+              </p>
+              <div class="project-details__links-group">
+                <a
+                  href="https://github.com/juan-canseco-dev/gaming-hub"
+                  class="btn btn--med btn--theme-inv project-details__links-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="common.viewCode"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span data-i18n="footer.social">Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/juan-pablo-canseco-rios-1a00a234a"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="LinkedIn profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/juan-canseco-dev"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="GitHub profile"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Juan Canseco</h4>
+            <p class="main-footer__short-desc" data-i18n="project1.footer.description">
+              Building software with a stronger focus on architecture,
+              maintainability, and practical learning through real projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower" data-i18n="footer.copyright">
+          &copy; Copyright 2026. Juan Canseco
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

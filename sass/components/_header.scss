@@ -1,0 +1,199 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: rgba($themeClrSurfaceStrong, 0.96);
+  box-shadow: 0 10px 40px rgba($themeClrPrimaryDark, 0.12);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $themeClrInk;
+    transition: color .3s;
+
+    &:hover {
+      color: $themeClrPrimary;
+    }
+  }
+  &__logo-img-cont {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+    background: $themeClrPrimary;
+
+    @include respond(tab-port) {
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-right: 1.2rem;
+    }
+  }
+  &__logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  &__logo-sub {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  &__main {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+
+    @include respond(tab-port) {
+      gap: 1.2rem;
+    }
+  }
+  &__links {
+    display: flex;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__lang-toggle {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__link {
+    padding: 2.2rem 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: $themeClrInk;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s;
+
+    &:hover {
+      color: $themeClrPrimary;
+    }
+    @include respond(tab-port) {
+      padding: 3rem 1.8rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__main-ham-menu-cont {
+    display: none;
+    width: 3rem;
+
+    padding: 2.2rem 0;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+  &__main-ham-menu {
+    width: 100%;
+  }
+  &__main-ham-menu-close {
+    width: 100%;
+  }
+
+  &__sm-menu {
+    background: $themeClrSurfaceStrong;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    box-shadow: 0px 10px 25px 0px rgba($themeClrPrimaryDark, 0.12);
+    -webkit-box-shadow: 0px 10px 25px 0px rgba($themeClrPrimaryDark, 0.12);
+    -moz-box-shadow: 0px 10px 25px 0px rgba($themeClrPrimaryDark, 0.12);
+
+    &--active {
+      visibility: hidden;
+      opacity: 0;
+   
+      @include respond(phone) {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &__sm-menu-link {
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 2.5rem 3rem;
+      font-size: 1.6rem;
+      color: $themeClrInk;
+      text-align: right;
+      border-bottom: 1px solid rgba($themeClrBorder, 0.8);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: color .3s;
+      
+      &:hover {
+        color: $themeClrPrimary;
+      }
+    }
+    &:first-child {
+      a {
+        border-top: 1px solid rgba($themeClrBorder, 0.8);
+      }
+    }
+  }
+  &__sm-menu-lang {
+    display: none;
+
+    @include respond(phone) {
+      display: flex;
+      justify-content: flex-end;
+      padding: 2rem 3rem 2.5rem 3rem;
+    }
+  }
+  &__sm-menu-link-last {
+    border-bottom: 0;
+  }
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem;
+  border: 1px solid rgba($themeClrBorder, 0.9);
+  border-radius: 999px;
+  background: rgba($themeClrPrimaryTint, 0.8);
+
+  &__btn {
+    min-width: 4.4rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    background: transparent;
+    color: $themeClrMuted;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background .3s, color .3s, box-shadow .3s;
+
+    &--active {
+      background: linear-gradient(135deg, $themeClrPrimary, $themeClrPrimaryDark);
+      color: $themeClrSurfaceStrong;
+      box-shadow: 0 6px 16px rgba($themeClrPrimaryDark, 0.2);
+    }
+  }
+}

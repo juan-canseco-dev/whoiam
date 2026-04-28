@@ -43,7 +43,7 @@ const translations = {
     'projects.gamehub.description':
       'A real-time multi-channel chat application built to learn modern C# and .NET practices in depth. It combines Clean Architecture, CQRS-style application flow, SignalR, RabbitMQ, Redis, and automated tests in one project.',
     'projects.inventory.description':
-      'A full-stack inventory management application started in 2023 and later revisited with a stronger architectural focus. The frontend uses Angular, CoreUI, and NgRx, while the backend uses Spring Boot, JWT auth, permissions, reporting, and a feature-based structure.',
+      'A full-stack inventory management application that i started a while ago and later revisited with a stronger architectural focus. The frontend uses Angular, CoreUI, and NgRx, while the backend uses Spring Boot, JWT auth, permissions, reporting, and a feature-based structure.',
     'projects.schedule.description':
       'A Windows Forms scheduling system delivered for a secondary school. It manages teachers, subjects, classrooms, groups, and weekly schedules with SQLite, and it became a key learning project for understanding where my architecture still needed to improve.',
     'projects.status': 'Live demo: work in progress',
@@ -110,7 +110,7 @@ const translations = {
     'project2.hero.status': 'Live demo in progress',
     'project2.showcase.alt': 'Inventory App screenshot',
     'project2.overview.paragraph1':
-      'Inventory App has been with me since <strong>2023</strong>, so this one feels personal. It started as an earlier full-stack project, and coming back to it after time away gave me the chance to see my old decisions more honestly and improve them instead of just pushing forward blindly.',
+      'Inventory App has been with me from a while ago, so this one feels personal. It started as an earlier full-stack project, and coming back to it after time away gave me the chance to see my old decisions more honestly and improve them instead of just pushing forward blindly.',
     'project2.overview.paragraph2':
       'On the <strong>frontend</strong>, I started with the <strong>CoreUI</strong> Angular template and later refactored it toward a more <strong>feature-based structure</strong> with <strong>NgRx</strong>, guards, facades, filters, pagination, and admin flows. It is also one of the places where I have been learning more about <strong>signals</strong> and modern Angular patterns by actually using them in a real project.',
     'project2.overview.paragraph3':
@@ -127,6 +127,7 @@ const translations = {
     'project2.screenshots.image6': 'Inventory App screenshot 6',
     'project2.screenshots.image7': 'Inventory App screenshot 7',
     'project2.screenshots.image8': 'Inventory App screenshot 8',
+    'project2.screenshots.image8': 'Inventory App screenshot 9',
     'project2.links.status':
       'Live demo is still a work in progress while I finish remaining modules and deployment.',
     'project2.footer.description':
@@ -225,9 +226,9 @@ const translations = {
     'project1.overview.paragraph1':
       'GameHub es el proyecto donde empec\u00E9 a sentir que las cosas hac\u00EDan clic para m\u00ED en <strong>C#</strong> y <strong>.NET</strong> modernos. No quer\u00EDa otra app CRUD simple, as\u00ED que eleg\u00ED una aplicaci\u00F3n de chat porque me daba espacio para trabajar comunicaci\u00F3n en tiempo real, autenticaci\u00F3n, estructura backend y experiencia frontend al mismo tiempo.',
     'project1.overview.paragraph2':
-      'Lo que m\u00E1s me gusta de este proyecto es que me permiti\u00F3 practicar ideas que me importan en un contexto m\u00E1s realista: <strong>Clean Architecture</strong>, un <strong>flujo estilo CQRS</strong>, <strong>SignalR</strong>, <strong>Redis</strong>, <strong>RabbitMQ</strong> y <strong>MassTransit</strong>. Tambi\u00E9n agregu\u00E9 pruebas automatizadas con <strong>Testcontainers</strong> porque quer\u00EDa que el proyecto se sintiera m\u00E1s cercano al tipo de c\u00F3digo que me dar\u00EDa orgullo construir en un entorno de equipo.',
+      'Lo que m\u00E1s me gusta de este proyecto es que me permiti\u00F3 practicar ideas que me importan en un contexto m\u00E1s realista: <strong>Clean Architecture</strong>, un <strong>flujo estilo CQRS</strong>, <strong>SignalR</strong>, <strong>Redis</strong>, <strong>RabbitMQ</strong> y <strong>MassTransit</strong>. Tambi\u00E9n agregu\u00E9 pruebas automatizadas con <strong>Testcontainers</strong> porque quer\u00EDa que el proyecto se sintiera m\u00E1s cercano al tipo de c\u00F3digo que me gustar\u00EDa construir en un entorno de equipo.',
     'project1.overview.paragraph3':
-      'M\u00E1s que nada, GameHub representa confianza. Es el proyecto donde siento que por fin implement\u00E9 <strong>clean architecture</strong> de una forma que tuvo sentido para m\u00ED, y me dio mucha motivaci\u00F3n para seguir profundizando en backend engineering.',
+      'M\u00E1s que nada, GameHub representa confianza. Es el proyecto donde siento que por fin implement\u00E9 <strong>clean architecture</strong> de una forma que tuvo sentido para m\u00ED, y me dio mucha motivaci\u00F3n para seguir profundizando en el desarrollo backend.',
     'project1.video.iframeTitle': 'Recorrido de GameHub',
     'project1.video.previewAlt': 'Vista previa del recorrido de GameHub',
     'project1.video.title':
@@ -254,7 +255,7 @@ const translations = {
     'project2.hero.status': 'Demo en vivo en progreso',
     'project2.showcase.alt': 'Captura de Inventory App',
     'project2.overview.paragraph1':
-      'Inventory App me acompa\u00F1a desde <strong>2023</strong>, as\u00ED que este proyecto se siente personal. Comenz\u00F3 como un proyecto full stack de una etapa anterior, y volver a \u00E9l despu\u00E9s de un tiempo me dio la oportunidad de ver mis decisiones pasadas con m\u00E1s honestidad y mejorarlas en lugar de seguir avanzando a ciegas.',
+      'Inventory App me acompa\u00F1a desde hace un rato, as\u00ED que este proyecto se siente personal. Comenz\u00F3 como un proyecto full stack de una etapa anterior, y volver a \u00E9l despu\u00E9s de un tiempo me dio la oportunidad de ver mis decisiones pasadas con m\u00E1s honestidad y mejorarlas en lugar de seguir avanzando a ciegas.',
     'project2.overview.paragraph2':
       'En el <strong>frontend</strong>, empec\u00E9 con la plantilla de Angular de <strong>CoreUI</strong> y despu\u00E9s la refactoric\u00E9 hacia una <strong>estructura basada en funcionalidades</strong> con <strong>NgRx</strong>, guards, facades, filtros, paginaci\u00F3n y flujos administrativos. Tambi\u00E9n es uno de los lugares donde he estado aprendiendo m\u00E1s sobre <strong>signals</strong> y patrones modernos de Angular us\u00E1ndolos en un proyecto real.',
     'project2.overview.paragraph3':
@@ -271,8 +272,9 @@ const translations = {
     'project2.screenshots.image6': 'Captura de Inventory App 6',
     'project2.screenshots.image7': 'Captura de Inventory App 7',
     'project2.screenshots.image8': 'Captura de Inventory App 8',
+    'project2.screenshots.image9': 'Captura de Inventory App 9',
     'project2.links.status':
-      'La demo en vivo sigue en progreso mientras termino los m\u00F3dulos restantes y el despliegue.',
+      'La demo en vivo sigue en progreso mientras continúo puliendo la aplicación y la estrategia de despliegue.',
     'project2.footer.description':
       'Aprendiendo en p\u00FAblico con proyectos que me permiten refactorizar, entregar y ser m\u00E1s intencional con la arquitectura.',
     'project3.meta.title': 'Caso de Estudio de Sistema de Horarios',
